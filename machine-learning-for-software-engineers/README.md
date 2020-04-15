@@ -17,7 +17,7 @@ Inspired by [Machine-Learning-for-software-engineers-repository](https://github.
 - [ ] [121 Essential Machine Learning Questions & Answers](https://elitedatascience.com/mlqa-reading-list)
 
 
-## Identify Job Description
+## Identify Job Description - <U>Contextual Side</U>
 contents from [How To Prepare For A Machine Learning Interview](http://blog.udacity.com/2016/05/prepare-machine-learning-interview.html)
 
 #### 1. If a company is looking to hire a Machine Learning Engineer, it should be clear that they are trying to solve a complex problem where traditional algorithmic solutions are hard to apply or simply do not work well enough. It should also be clear they are also extremely motivated to solve that problem. 
@@ -45,7 +45,7 @@ contents from [How To Prepare For A Machine Learning Interview](http://blog.udac
 #### 6. Depending on your interviewer and the stage of your interview, you may be asked more technical questions, but you should try to use any opportunity you get to demonstrate that you have thought about the company and role. When asked more open-ended questions such as “Describe a technical challenge you faced when working on a project and how you solved it?” try to pick something that aligns well with the company’s interests. 
 기술적인 질문들을 대답할 때 회사와 직무에 관해 생각을 해봤다는 것을 증명해 보일 기회로 삼아라. 회사의 관심과 관련이 있는 프로젝트를 진행하면서 경험한 기술적인 챌린지의 해결 경험을 선택하여 대답하라. 
 
-## Machine Learning Engineer Skill Set 
+## Job Description - Machine Learning Engineer <U>Technical Skill Set </U>
 1. Computer Science Fundamentals and Programming 
 2. Probability and Statistics 
 3. Data Modeling and Evaluation 
@@ -118,3 +118,16 @@ SVM 을 학습시킬 때 어떠한 값을 최적화하려는 것인가?
 5. I’ve found some data about wheat-growing regions in Europe that includes annual rainfall (R, in inches), mean altitude (A, in meters) and wheat output (O, in kgs/km2). A rough analysis and some plots make me believe that output is related to the square of rainfall, and log of altitude: O = β0 + β1 × R2 + β2 × loge(A)
 Can I fit the coefficients (β) in my model to the data using linear regression?
 밀 생산 지역의 데이터를 수집했다. 간단한 분석과 구성에 따르면 출력값은 강수량과 관련이 있다. 선형 회귀 모델을 이용하는 데이터에 맞게 모델의 계수를 조정할 수 있는가?
+
+#### 5. Software Engineering and System Design 
+1. You run an ecommerce website. When a user clicks on an item to open its details page, you would like to suggest 5 more items that the user may be interested in, based on item features as well as the user’s purchase history, and display them at the bottom of the page. What services and database tables would you need to support this behavior? Assuming they’re available, write a query or procedure to fetch the 5 items to suggest.
+상품 클릭하면 5가지 다른 옵션을 추천해주는 시스템. 상품의 특징, 사용자의 과거 결제 내역을 고려해 만든다. 이를 구현하려면 무슨 서비스, 데이터 테이블을 사용해야하는가? 5개의 아이템을 가져와 보여주는 쿼리문을 작성해라. 
+
+2. What data would you like to collect from an online video player (like YouTube) to measure user engagement and video popularity?
+사용자의 관심도와 영상의 인기도를 측정하기 위해서 온라인 영상매체에서는 어떠한 데이터를 읽어내야 하는가? 
+
+3. A very simple spam detection system works as follows: It processes one email at a time and counts the number of occurrences of each unique word in it (term frequency), and then it compares those counts with those of previously seen emails which have been marked as spam or not. In order to scale up this system to handle a large volume of email traffic, can you design a map-reduce scheme that can run on a cluster of computers
+간단한 스팸 인식 시스템: 이메일을 개별적으로 처리하고, 메일 안에 특정 단어의 언급 횟수를 측정한 다음 과거에 처리했던 메일들 (스팸 / 스팸 아님)을 처리한 결과와 비교한다. 큰 용량의 이메일 컴퓨터의 클러스터에서 작동가능한 프레임워크를 디자인해라. 
+
+4. You want to generate a live visualization of what portion of a webpage users are currently viewing and clicking, sort of like a heat map. What components/services/APIs do you need in place, on the client and server end, to enable this?
+사용자가 웹페이지의 어디 부분을 보고 있고 클릭하고 있는 지 정보를 수집하여 실시간으로 시각화하는 시스템, Heat Map을 만들고 싶다면 클라이언트와 서버 말단에 어떠한 컴포넌트, 서비스,API를 두어야 하는가? 
