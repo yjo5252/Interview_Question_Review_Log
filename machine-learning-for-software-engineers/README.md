@@ -113,9 +113,8 @@ SVM 을 학습시킬 때 어떠한 값을 최적화하려는 것인가?
 ( 용어를 모른다. Lasso 회귀방법, ridge 회귀 방법) 해결책 솔루션이 될 최적화 방법은 무엇인가? 하나 이사의 계수가 0이 되는 sparse solution. 
 
 4. When training a 10-layer neural net using backpropagation, I find that the weights for the top 3 layers are not changing at all! The next few layers (4-6) are changing, but very slowly. What’s going on and how do I fix this?
+역전달을 이용해 10 계층 NN을 학습시킬 때, 상위 3개 계층의 무게는 변하지 않w지만 나머지 4-6 계층은 점진적으로 천천히 변화한다. 무슨 상황이고 어떻게 고칠 수 있는가?
 
-
-I’ve found some data about wheat-growing regions in Europe that includes annual rainfall (R, in inches), mean altitude (A, in meters) and wheat output (O, in kgs/km2). A rough analysis and some plots make me believe that output is related to the square of rainfall, and log of altitude: O = β0 + β1 × R2 + β2 × loge(A)
+5. I’ve found some data about wheat-growing regions in Europe that includes annual rainfall (R, in inches), mean altitude (A, in meters) and wheat output (O, in kgs/km2). A rough analysis and some plots make me believe that output is related to the square of rainfall, and log of altitude: O = β0 + β1 × R2 + β2 × loge(A)
 Can I fit the coefficients (β) in my model to the data using linear regression?
- 
-
+밀 생산 지역의 데이터를 수집했다. 간단한 분석과 구성에 따르면 출력값은 강수량과 관련이 있다. 선형 회귀 모델을 이용하는 데이터에 맞게 모델의 계수를 조정할 수 있는가?
